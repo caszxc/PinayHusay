@@ -70,7 +70,7 @@ const wrapper = document.querySelector(".wrapper"),
 
 let sports = [
 
-  "<a href='Athletics.html'><span style='color: Black'>Athletics</span></a>",
+
   "<a href='Boxing.html'><span style='color:Black'>Boxing</span></a>",
   "<a href='Chess.html'><span style='color:Black'>Chess</span></a>",
   "<a href='Golf.html'><span style='color:Black'>Golf</span></a>",

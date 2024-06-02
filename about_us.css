@@ -417,14 +417,15 @@ a {
  
 }
 .container .box{
-  width: calc(33% - 10px);
+  width:70%;
   background: #9d9ee9;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px 30px;
-  border-radius: 5px;
+  border-radius: 40px;
+  margin-left: 110px;
 }
 .box .quote i{
 margin-top: 10px;
