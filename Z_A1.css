@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #8b84ee;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./AthleteBackground/elmabg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.heading {
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.heading h1 {
+  font-size: 30px;
+  color: #ffffff;
+  padding: 20px 10px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.heading h1::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: #ff0000;
+}
+
+.heading p {
+  font-size: 15px;
+  color: #f2f3ff;
+  margin-bottom: 35px;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  max-width: 100%;
+
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.4s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.2);
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h2 {
+  font-size: 23px;
+  margin-bottom: 15px;
+  color: #fff8f8;
+}
+
+ul {
+  color: rgb(249, 249, 255);
+  line-height: 1.2;
+}
+
+li {
+  color: #fff4f4;
+}
+
+/* Media queries for responsiveness */
+
+/* For screens smaller than 768px (tablets) */
+@media (max-width: 768px) {
+  .heading h1 {
+    font-size: 24px;
+  }
+
+  .heading p {
+    font-size: 14px;
+  }
+}
+
+/* For screens smaller than 600px (phones) */
+@media (max-width: 600px) {
+  .heading h1 {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .heading p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-image {
+    margin-right: 0;
+  }
+
+  .about-content {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+
+  .about-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.4s ease;
+  }
+  
+  .about-image:hover img {
+    transform: scale(1.2);
+  }
+  
+}
